@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    font-family: 'Cabin', sans-serif;
+    color: white;
+    background: black;
+}
+
+.navBarUl{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10%;
+
+}
+
+li{
+    font-size: 1.3em;
+    list-style: none;
+    padding:2%;
+    margin: 2%;
+}
+
+.brand{
+    float: left;
+}
+
+.logoIndeed{
+    width: 70%;
+    margin-left:12%;
+}
