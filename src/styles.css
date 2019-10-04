@@ -28,3 +28,15 @@ li{
     width: 70%;
     margin-left:12%;
 }
+
+/* RULES RELATED TO PROJECTS */
+
+.projectImageCont{
+    /* just to add something to bypass the empty rule warning */
+    border: 3px solid white;
+}
+
+.projecTitle{
+    /* just to add something to bypass the empty rule warning */
+    font-size: 1.2em;
+}
