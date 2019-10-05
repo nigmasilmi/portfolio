@@ -1,42 +1,183 @@
-/* You can add global styles to this file, and also import other style files */
-body{
-    font-family: 'Cabin', sans-serif;
-    color: white;
-    background: black;
+/* CSS RESET */
+
+
+nav ul {
+  list-style: none;
 }
 
-.navBarUl{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 10%;
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+
+
+/* COMPONENT SELECTORS RULES */
+app-navbar {
+  background: red;
+}
+
+/* GENERAL RULES */
+
+body {
+  font-family: 'Cabin', sans-serif;
+  color: white;
+  background: black;
+}
+
+.footsteps {
+  z-index: -2;
+  opacity: 0.1;
+  position: absolute;
+  top: -45%;
+  left: -1%
+}
+
+/* RULES RELATED TO NAVBAR */
+nav {
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 8%;
+  flex-wrap: wrap;
+}
+
+.navBar {
+  margin-left: 26%;
+}
+
+.navBar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navBar ul li {
+  padding: 2%;
+  margin: 1%;
+  font-size: 1.3em;
+  list-style: none;
 
 }
 
-li{
-    font-size: 1.3em;
-    list-style: none;
-    padding:2%;
-    margin: 2%;
+.brand {
+  float: left;
 }
 
-.brand{
-    float: left;
-}
-
-.logoIndeed{
-    width: 70%;
-    margin-left:12%;
+.logoIndeed {
+  width: 60%;
+  /* margin-left:12%; */
 }
 
 /* RULES RELATED TO PROJECTS */
 
-.projectImageCont{
-    /* just to add something to bypass the empty rule warning */
-    border: 3px solid white;
+.projectImageCont {
+  /* just to add something to bypass the empty rule warning */
+  border: 3px solid white;
 }
 
-.projecTitle{
-    /* just to add something to bypass the empty rule warning */
-    font-size: 1.2em;
+.projecTitle {
+  /* just to add something to bypass the empty rule warning */
+  font-size: 1.2em;
 }
+
+/* MEDIA QUERIES */
+
+/* UP TO 575px */
+
+@media (max-width: 575px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 1%;
+  }
+
+  .navBar {
+    margin-left: 0;
+  }
+
+  .navBar ul {
+    flex-direction: column;
+
+  }
+
+  .brand {
+    margin-left: 6%;
+  }
+
+  .footsteps {
+    display: none;
+  }
+
+}
+
+/* FROM 576px */
+
+@media (min-width: 576px) {
+  nav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .navBar {
+    margin-left: 0;
+  }
+
+  .navBar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 30%;
+
+  }
+
+  .footsteps {
+    display: none;
+  }
+}
+
+
+/* FROM 766px */
+
+@media (min-width: 767px) {
+/* 
+  nav {
+    align-items: center;
+  }
+
+  .navBar ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+    justify-content: flex-end;
+  }
+*/
+  .footsteps {
+    display: block;
+  }
+
+} 
