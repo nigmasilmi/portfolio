@@ -10,16 +10,17 @@ import {ContactComponent} from './../app/components/contact/contact.component';
 
 
 const routes: Routes = [
-  {path:'projects', component: ProjectsComponent},
-  {path:'project/:id', component:ProjectDetailComponent},
-  {path:'skills', component:SkillsComponent},
-  {path:'sandbox', component:SandboxComponent},
-  {path:'endurance', component:EnduranceComponent},
-  {path:'contact', component:ContactComponent},
+  {path: 'projects', component: ProjectsComponent, data: {animation: 'Projects'}},
+  {path: 'project/:id', component: ProjectDetailComponent},
+  {path: 'skills', component: SkillsComponent , data: {animation: 'Skills'}},
+  {path: 'sandbox', component: SandboxComponent, data: {animation: 'SandBox'}},
+  {path: 'endurance', component: EnduranceComponent, data: {animation: 'Endurance'}},
+  {path: 'contact', component: ContactComponent, data: {animation: 'Contact'}},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {anchorScrolling: 'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+

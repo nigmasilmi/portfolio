@@ -1,7 +1,7 @@
 /* CSS RESET */
 
 
-nav ul {
+nav ul, ul {
   list-style: none;
 }
 
@@ -28,17 +28,23 @@ section {
 
 
 
-/* COMPONENT SELECTORS RULES */
-app-navbar {
-  background: red;
+
+/* GENERAL */
+
+html,
+body {
+  height: 100%;
 }
 
-/* GENERAL RULES */
-
 body {
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Cabin', sans-serif !important;
   color: white;
-  background: black;
+  background-color: black;
+}
+
+.mainSection {
+  width: 100%;
+  border-bottom: 3px solid #FF5714;
 }
 
 .footsteps {
@@ -49,7 +55,44 @@ body {
   left: -1%
 }
 
-/* RULES RELATED TO NAVBAR */
+.temporal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 80%;
+  margin-top: 2%;
+
+}
+
+.fa-sort-up,
+.fa-angle-double-right {
+  display: block;
+  font-size: 3em;
+  color: #FF5714;
+
+}
+
+.fa-angle-double-right {
+  margin-right: -20%;
+  position: relative;
+  bottom: -70%;
+  right: 13%;
+
+}
+
+.fa-sort-up {
+  position: relative;
+  bottom: -10%;
+  left: 95%;
+}
+
+
+/* CANVAS */
+
+
+
+/* NAVBAR */
 nav {
   z-index: 3;
   display: flex;
@@ -61,7 +104,8 @@ nav {
 }
 
 .navBar {
-  margin-left: 26%;
+  margin-left: 30%;
+  align-self: center;
 }
 
 .navBar ul {
@@ -71,39 +115,144 @@ nav {
 }
 
 .navBar ul li {
-  padding: 2%;
-  margin: 1%;
   font-size: 1.3em;
   list-style: none;
+  display: flex;
+  align-items: center;
 
 }
 
-.brand {
-  float: left;
-}
 
 .logoIndeed {
   width: 60%;
-  /* margin-left:12%; */
+  margin-left: 30%;
+
 }
 
-/* RULES RELATED TO PROJECTS */
-
-.projectImageCont {
-  /* just to add something to bypass the empty rule warning */
-  border: 3px solid white;
+/* SPINNER */
+mat-spinner {
+  display: block;
+}
+.spinners{
+  padding: 4%;
+  margin: 0 auto;
 }
 
-.projecTitle {
-  /* just to add something to bypass the empty rule warning */
-  font-size: 1.2em;
+/* PROJECTS */
+
+/* .projectsContainer {
+  height: 300px;
+} */
+
+.prMid,
+.prLeft,
+.prRight {
+  color: white !important;
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+  align-items: center;
+  box-sizing: border-box;
+  /* height: 300px; */
 }
 
-/* MEDIA QUERIES */
+.prMid {
+  margin-left: 100%;
+}
 
-/* UP TO 575px */
+
+.prLeft {
+  margin-left: 9%;
+  margin-bottom: -12%;
+}
+
+
+.prRight {
+  margin-left: 60%;
+}
+
+
+.projectMagazine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: border-box;
+
+}
+
+.projectCover {
+  display: flex;
+  margin-left: 30%;
+  margin-right: 8%;
+}
+
+.projectCover img {
+  /* max-width: 60%; */
+  margin: 0 auto;
+  z-index: -2;
+}
+
+.projectName {
+  font-size: 1.7em;
+  color:
+    whitesmoke;
+  transform: translateY(-140%);
+  border-bottom: 4px solid #FF5714;
+  position: relative;
+  font-weight: bold;
+  text-shadow:
+    #3a3a3a 3px 2px 2px, 7px 2px 2px rgba(206, 89, 55, 0);
+  padding-bottom: 2%;
+  width: 60%;
+}
+
+
+.projectLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectRepo i,
+.projectDeploy i {
+  font-size: 3em;
+  margin-bottom: 30%;
+  color: whitesmoke;
+  text-shadow: #3a3a3a 3px 2px 2px, 7px 2px 2px rgba(206, 89, 55, 0);
+
+}
+
+/* SKILLS */
+.skillsContainer{
+  padding-top: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.subSkContainer ul{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: nowrap;
+}
+
+.subSkContainer li {
+  display: inline-block;
+  text-align: center;
+}
+
+ .skLogos{
+  max-width: 50%;
+} 
+
+/**** MEDIA QUERIES ****/
+
+/*** UP TO 575px ***/
 
 @media (max-width: 575px) {
+
+  /* NAVBAR max-width: 575px */
   nav {
     display: flex;
     flex-direction: column;
@@ -129,11 +278,37 @@ nav {
     display: none;
   }
 
+
+  /* PROJECTS max-width: 575px */
+  .projectCover {
+    margin: 0;
+
+  }
+
+  .projectCover img {
+    max-width: 90%;
+
+  }
+
+  .projectName {
+    font-size: 1.3em;
+    transform: translateY(20%);
+  }
+
+  .projectRepo i,
+  .projectDeploy i {
+    font-size: 2.5em;
+    margin-bottom: 100%;
+  }
+
 }
 
-/* FROM 576px */
 
-@media (min-width: 576px) {
+/*** FROM 576px ***/
+
+@media (min-width: 576px) and (max-width: 765px) {
+
+  /* NAVBAR min-width: 575px */
   nav {
     display: flex;
     flex-wrap: nowrap;
@@ -155,29 +330,12 @@ nav {
 
   }
 
+  /* GENERAL min-width: 575px */
+
   .footsteps {
     display: none;
   }
+
+  /* PROJECTS min-width: 575px */
+
 }
-
-
-/* FROM 766px */
-
-@media (min-width: 767px) {
-/* 
-  nav {
-    align-items: center;
-  }
-
-  .navBar ul {
-    display: flex;
-    flex-direction: row;
-    margin-left: 15%;
-    justify-content: flex-end;
-  }
-*/
-  .footsteps {
-    display: block;
-  }
-
-} 

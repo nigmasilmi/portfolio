@@ -1,28 +1,47 @@
-<router-outlet></router-outlet>
-<app-navbar></app-navbar>
+<div id="start" class="canvas">
+  <app-navbar></app-navbar>
 
- <!-- Setting high to allow scrolling with transparent elements and inpage-links  -->
-<div class="footsteps">
+
+  <div class="footsteps">
     <img src="./../assets/img/footsteps1-05.png" alt="Footsteps">
-</div>
-<!--
-<div id="projectsId">
-  <app-projects></app-projects>
+  </div>
+
+  <div data-aos="fade-up" class="mainSection">
+    <div class="mat-h2">Hello Nigma Front End Developer y quien sabe otras cosas para decir aquí con esta misma extensión</div>
+  </div>
+
+  <div  data-aos="fade-up" class="mainSection" id="projects">
+    <a routerLink="/" fragment="start"><i class="fas fa-sort-up"></i></a>
+    <app-projects></app-projects>
+  </div>
+
+  <div data-aos="fade-up" class="mainSection" id="skills">
+    <app-skills></app-skills>
+    <a routerLink="/" fragment="start"><i class="fas fa-sort-up"></i></a>
+  </div>
+
+  <div data-aos="fade-up" class="mainSection" id="sandbox">
+    <p>Sandbox goes here</p>
+    <app-sandbox></app-sandbox>
+    <a routerLink="/" fragment="start"><i class="fas fa-sort-up"></i></a>
+  </div>
+
+  <!-- <div data-aos="fade-up" class="mainSection" >
+    <p>Endurance goes here</p>
+    <app-endurance id="endurance"></app-endurance>
+    <a routerLink="/" fragment="start"><i class="fas fa-sort-up"></i></a>
+  </div> -->
 </div>
 
-<div id="skillsId">
-  <app-skills></app-skills>
-</div>
+  <!-- Este también funciona -->
+  <!-- <div [@routeAnimations]="prepareRoute(outlet)" >
+  <router-outlet #outlet="outlet"></router-outlet>
+</div> -->
+  <!-- Este activo es el que funciona -->
+  <!-- <div [@routeAnimations]="o && o.activatedRouteData 
+      && o.activatedRouteData['animation']">
+    <router-outlet #o="outlet"></router-outlet>
+</div> -->
 
-<div id="sandBoxId">
-  <app-sandbox></app-sandbox>
-</div>
 
-<div id="enduranceId">
-  <app-endurance></app-endurance>
-</div>
 
-<div id="contactId">
-  <app-contact></app-contact>
-</div>
--->
