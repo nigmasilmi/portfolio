@@ -230,6 +230,10 @@ mat-spinner {
   align-items: center;
 }
 
+.placeHolder{
+  height: 100vh;
+}
+
 .subSkContainer ul{
 display: flex;
 align-items: center;
