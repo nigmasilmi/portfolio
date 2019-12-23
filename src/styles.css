@@ -64,7 +64,7 @@ body {
 .fa-angle-double-right {
   display: block;
   font-size: 3em;
-  color: #FF5714;
+  color: #F74D4D;
 
 }
 
@@ -267,7 +267,7 @@ nav {
   color:
     whitesmoke;
   transform: translateY(-140%);
-  border-bottom: 4px solid #FF5714;
+  border-bottom: 4px solid #F74D4D;
   position: relative;
   font-weight: bold;
   text-shadow:
