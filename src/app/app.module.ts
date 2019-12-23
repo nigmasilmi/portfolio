@@ -17,6 +17,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import { CanvasComponent } from './components/canvas/canvas.component';
+import { AboutComponent } from './components/about/about.component';
 
 
 
@@ -30,7 +31,8 @@ import { CanvasComponent } from './components/canvas/canvas.component';
     SandboxComponent,
     EnduranceComponent,
     ContactComponent,
-    CanvasComponent
+    CanvasComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
