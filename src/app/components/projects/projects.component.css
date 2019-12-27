@@ -1,3 +1,109 @@
-:host{
-    display: block;
+:host {
+  display: block;
+  height: 100vh;
+}
+
+.temporal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.testingTheGrid {
+  display: grid;
+}
+
+.prjsWrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+
+}
+
+.waterMark {
+  grid-column: 1/6;
+  grid-row: 1/2;
+}
+
+.prjsGrid {
+  margin-top: 9.7%;
+  display: grid;
+}
+
+.prLeft {
+  display: flex;
+  grid-column: 1/6;
+  grid-row: 5/7;
+  margin: 2%;
+}
+
+.prMid {
+  display: flex;
+  grid-column: 4/9;
+  grid-row: 8/10;
+  margin: 2%;
+}
+
+.prRight {
+  display: flex;
+  grid-column: 7/12;
+  grid-row: 5/7;
+  margin: 2%;
+}
+
+.projectCover {
+  width: 26em;
+}
+
+.projectCover img {
+  max-width: 100%;
+}
+
+#arrow {
+  font-size: 2.3em;
+  color: #F74D4D;
+  grid-column: 10/10;
+  grid-row: 8/10;
+}
+
+.projectName {
+  font-size: 1.7em;
+  color:
+    whitesmoke;
+
+  border-bottom: 4px solid #F74D4D;
+  position: relative;
+  font-weight: bold;
+  text-shadow:
+    #3a3a3a 3px 2px 2px, 7px 2px 2px rgba(206, 89, 55, 0);
+  padding-bottom: 1%;
+  width: 60%;
+  margin-left: -15%;
+  margin-bottom: 2%;
+  margin-top: 1%;
+}
+
+
+.projectLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectRepo i,
+.projectDeploy i {
+  font-size: 2.7em;
+  margin-bottom: 0;
+  color: whitesmoke;
+  text-shadow:
+    #3a3a3a 3px 2px 2px, 7px 2px 2px rgba(206, 89, 55, 0);
+  margin-top: 100%;
+  margin-left: 50%;
+
+}
+
+.more {
+  font-size: 0.6em;
+  font-family: 'Cabin', sans-serif;
+  color:
+    whitesmoke;
 }

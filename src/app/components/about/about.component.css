@@ -1,0 +1,22 @@
+ 
+ :host{
+	display: block;
+	height: 100vh;
+  } 
+
+  .abtWrapper {
+	background: #1B0B25;
+	height: 100vh;
+  }
+
+
+  .abtContent {
+	margin-top: -16%;
+	padding: 20%;
+	font-weight: normal;
+	font-size: 21px;
+	line-height: 26px;
+	text-align: right;
+	margin-right: -12%;
+	color: #FFFFFF;
+  }

@@ -1,9 +1,8 @@
 <div class="prjsWrapper">
   <div class="waterMark">PROJECTS</div>
-  <div data-aos="fade-up" class="temporal">
-    <div *ngFor="let project of theProjects; let i=index">
-      <!-- <div *ngIf="i < 3 && !showSpinner" [ngClass]="setPrjClass(i)"> -->
-      <div data-aos="zoom-in" *ngIf="i < 3" [ngClass]="setPrjClass(i)">
+  <div data-aos="fade-up" class="prjsGrid" >
+    <div *ngFor="let project of projectsToShow; let i=index" [ngClass]="setPrjClass(i)">
+      <!-- <div data-aos="zoom-in" *ngIf="i < 3" [ngClass]="setPrjClass(i)"> -->
         <div class="projectMagazine">
           <div class="projectCover">
             <img src="{{project.payload.doc.data().coverSrc}}" alt="{{project.payload.doc.data().name}}">
@@ -15,8 +14,8 @@
           <a class="projectRepo" href="{{project.payload.doc.data().repo}}" target="_blank"><i class="fab fa-github"></i></a>
           <a class="projectDeploy" href="{{project.payload.doc.data().deploy}}" target="_blank"><i class="fas fa-desktop"></i></a>
         </div>
-      </div>
+      <!-- </div> -->
     </div>
-    <i (click)="nextBatch(3)" class="fas fa-angle-double-right"></i>
+    <i (click)="nextBatch(3)" class="fas fa-angle-double-right" id="arrow"><p class="more">Load more</p></i>
   </div>
 </div>

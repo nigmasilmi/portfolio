@@ -9,7 +9,7 @@ import {ContactComponent} from './../app/components/contact/contact.component';
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
   anchorScrolling: 'enabled',
-  scrollOffset: [0, 64],
+  scrollOffset: [0, 0],
 };
 
 
