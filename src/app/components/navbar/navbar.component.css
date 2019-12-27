@@ -62,7 +62,7 @@ nav {
 
   .navBar {
     margin-top: 35%;
-    margin-left: 0.8em;
+    margin-left: -0.2em;
     align-self: center;
     flex-direction: column;
     opacity: 0.3;
@@ -71,7 +71,7 @@ nav {
 
 
   .navBar ul li {
-    font-size: 21px;
+    font-size: 17px;
     line-height: 30px;
     margin-right: 5%;
 
@@ -80,7 +80,7 @@ nav {
 }
 
  /*** FROM 576px ***/
-  
+
  @media (min-width: 576px) and (max-width: 769px) {
 
   .navBar {
@@ -100,3 +100,27 @@ nav {
 
   }
  }
+
+/* FROM 770px to 1200 px */
+
+@media (min-width: 770px) and (max-width: 1200px) {
+
+  .navBar {
+    margin-top: 10%;
+    margin-left: 21em;
+    align-self: center;
+    opacity: 0.3;
+    z-index: 5;
+  }
+
+
+  .navBar ul li {
+    font-size: 18px;
+    line-height: 30px;
+    margin-right: 5%;
+
+  }
+
+
+
+}

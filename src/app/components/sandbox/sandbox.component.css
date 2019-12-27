@@ -144,9 +144,9 @@ a {
   }
 
   .brandText>h4 {
-    font-size: 1em;
+    font-size: 0.9em;
     line-height: 23px;
-    margin: -0.3em 0 0 -0.5em;
+    margin: -0.3em 0 0 -0.6em;
   }
 
   .brandImg {
@@ -169,7 +169,7 @@ a {
   }
 
   .icons a {
-    margin: 0 -15em 0 -12em;
+    margin: 0 -15em 0 -5em;
   }
 
 }
@@ -226,5 +226,16 @@ a {
   .icons a {
     margin: 0 -15em 0 -12em;
   }
+
+}
+
+/* FROM 770px to 1200 px */
+
+@media (min-width: 770px) and (max-width: 1200px) {
+
+  .branding {
+    margin-left: -3em;
+  }
+
 
 }

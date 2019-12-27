@@ -53,6 +53,16 @@
 
 /* UP TO 365px */
 @media (max-width: 365px) {
+
+  :host {
+    display: block;
+    height: 100vh;
+  }
+
+  .skillsContainer {
+    margin-top: 100%;
+  }
+
   .skillset {
     display: flex;
     flex-direction: column;
@@ -60,12 +70,19 @@
 
   .subSkContainer {
     margin-top: 7%;
+  }
+
+  .projectLinks {
+    margin: -2em 0em 1em -2em;
   }
 
 }
 
 /* FROM 366 TO 575 px */
 @media (min-width: 366px) and (max-width: 575px) {
+  .skillsContainer {
+    margin-top: 62%;
+  }
 
   .skillset {
     display: flex;
@@ -77,9 +94,9 @@
   }
 }
 
- /*** FROM 576px ***/
-  
- @media (min-width: 576px) and (max-width: 769px) {
+/*** FROM 576px ***/
+
+@media (min-width: 576px) and (max-width: 769px) {
 
   .skillset {
     display: flex;
@@ -89,4 +106,20 @@
   .subSkContainer {
     margin-top: 7%;
   }
- }
+}
+
+/* FROM 770px to 1200 px */
+
+@media (min-width: 770px) and (max-width: 1200px) {
+
+  .skillset {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subSkContainer {
+    margin-top: 7%;
+  }
+
+
+}

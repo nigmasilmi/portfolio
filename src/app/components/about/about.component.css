@@ -47,3 +47,12 @@
       font-size: 20px;
     }
   }
+
+ /* FROM 770px to 1200 px */
+
+ @media (min-width: 770px) and (max-width: 1200px) {
+
+  .abtContent{
+    line-height: 30px;
+  }
+}
