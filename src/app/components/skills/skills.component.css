@@ -51,15 +51,28 @@
   max-width: 100%;
 }
 
-/* UP TO 350px */
-@media (max-width: 350px) {
+/* UP TO 365px */
+@media (max-width: 365px) {
   .skillset {
     display: flex;
     flex-direction: column;
   }
 
-  .subSkContainer{
+  .subSkContainer {
     margin-top: 7%;
   }
 
+}
+
+/* FROM 366 TO 575 px */
+@media (min-width: 366px) and (max-width: 575px) {
+
+  .skillset {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subSkContainer {
+    margin-top: 7%;
+  }
 }

@@ -1,58 +1,80 @@
 nav {
-	z-index: 3;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
-	margin-left: 8%;
-	flex-wrap: wrap;
-  }
-  
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 8%;
+  flex-wrap: wrap;
+}
+
+.navBar {
+  margin-top: 5%;
+  position: fixed;
+  margin-left: 42%;
+  align-self: center;
+  opacity: 0.3;
+  z-index: 5;
+}
+
+.navBar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navBar ul li {
+  font-family: Cabin;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
+
+}
+
+/* UP TO 365px */
+@media (max-width: 365px) {
+
   .navBar {
-	margin-top: 5%;
-	position: fixed;
-	margin-left: 42%;
-	align-self: center;
-	opacity: 0.3;
-	z-index: 5;
+    margin-top: 35%;
+    margin-left: 0;
+    align-self: center;
+    flex-direction: column;
+    opacity: 0.3;
+    z-index: 5;
   }
-  
-  .navBar ul {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-  }
-  
+
+
   .navBar ul li {
-	font-family: Cabin;
-	text-transform: uppercase;
-	font-size: 24px;
-	line-height: 30px;
-	list-style: none;
-	display: flex;
-	align-items: center;
-	margin-right: 5%;
-  
+    font-size: 14px;
+    line-height: 30px;
+    margin-right: 5%;
+
   }
 
-  /* UP TO 350px */
-@media (max-width: 350px) {
-  
-	.navBar{
-	  margin-top: 35%;
-	  margin-left: 0;
-	  align-self: center;
-	  flex-direction: column;
-	  opacity: 0.3;
-	  z-index: 5;
-	}
+}
 
-	
-	.navBar ul li {
-		font-size: 14px;
-		line-height: 30px;
-		margin-right: 5%;
-	  
-	  }
-	
-	}
+/* FROM 366 TO 575 px */
+@media (min-width: 366px) and (max-width: 575px) {
+
+  .navBar {
+    margin-top: 35%;
+    margin-left: 0.8em;
+    align-self: center;
+    flex-direction: column;
+    opacity: 0.3;
+    z-index: 5;
+  }
+
+
+  .navBar ul li {
+    font-size: 21px;
+    line-height: 30px;
+    margin-right: 5%;
+
+  }
+
+}
