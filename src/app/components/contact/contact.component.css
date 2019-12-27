@@ -63,3 +63,33 @@
     padding: 8% 5% 12% 5%;
   }
 }
+
+ /*** FROM 576px ***/
+  
+ @media (min-width: 576px) and (max-width: 769px) {
+
+  .contactWrapper {
+    margin-top: 25%;
+  }
+
+  .holdTheCards {
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactInfo {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 49px; 
+    mix-blend-mode: overlay;
+    background: linear-gradient(179.9deg,
+        rgba(103, 39, 140, 0.44) -8.7%, rgba(255, 255, 255, 0) 99.67%),
+      rgba(66, 25, 90, 0.2);
+    box-shadow: 12px 0p 22px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 8% 5% 12% 5%;
+  }
+ }

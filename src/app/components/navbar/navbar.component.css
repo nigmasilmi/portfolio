@@ -78,3 +78,25 @@ nav {
   }
 
 }
+
+ /*** FROM 576px ***/
+  
+ @media (min-width: 576px) and (max-width: 769px) {
+
+  .navBar {
+    margin-top: 16%;
+    margin-left: 6em;
+    align-self: center;
+    flex-direction: column;
+    opacity: 0.3;
+    z-index: 5;
+  }
+
+
+  .navBar ul li {
+    font-size: 21px;
+    line-height: 30px;
+    margin-right: 5%;
+
+  }
+ }

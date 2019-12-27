@@ -76,3 +76,17 @@
     margin-top: 7%;
   }
 }
+
+ /*** FROM 576px ***/
+  
+ @media (min-width: 576px) and (max-width: 769px) {
+
+  .skillset {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subSkContainer {
+    margin-top: 7%;
+  }
+ }

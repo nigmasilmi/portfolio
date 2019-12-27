@@ -200,7 +200,15 @@ body {
 @media (min-width: 366px) and (max-width: 575px) {
 
   .waterMark {
-    font-size: 3em;
+    font-size: 3.5em;
     z-index: 5;
   }
+}
+
+@media (min-width: 576px) and (max-width: 769px) {
+  .waterMark {
+    font-size: 4em;
+    z-index: 5;
+  }
+
 }

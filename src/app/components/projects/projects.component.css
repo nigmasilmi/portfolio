@@ -195,3 +195,48 @@
   }
 
 }
+
+ /*** FROM 576px ***/
+  
+ @media (min-width: 576px) and (max-width: 769px) {
+
+  .prjsGrid {
+    margin-top: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .prLeft,
+  .prMid,
+  .prRight {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 0;
+  }
+
+  .projectCover {
+    width: 23em;
+  }
+
+  .projectName {
+    margin-left: 0%;
+    text-align: center;
+    width: 100%;
+  }
+
+  .projectLinks {
+    flex-direction: row;
+    margin: -2em 0em 1.5em -2em;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .projectRepo i,
+  .projectDeploy i {
+    font-size: 2em;
+  }
+
+  #arrow {
+    text-align: center;
+  }
+ }
