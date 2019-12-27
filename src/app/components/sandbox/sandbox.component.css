@@ -62,3 +62,58 @@
 a {
   margin-right: 4%;
 }
+
+
+/* UP TO 350px */
+@media (max-width: 350px) {
+
+  :host{
+    height: 100vh;
+  }
+
+  .branding {
+    margin: 0 auto;
+  }
+
+}
+
+.brandText {
+  font-size: 1.3em;
+  line-height: 35px;
+}
+
+.brandText>h3 {
+  font-size: 1.5em;
+  line-height: 46px;
+  margin: 0 0 0 -0.4em;
+}
+
+.brandText>h4 {
+  font-size: 0.8em;
+  line-height: 23px;
+  margin: -0.3em 0 0 -0.5em;
+}
+
+.brandImg {
+  grid-column: 2/5;
+}
+
+.brandImg img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 116%;
+}
+
+.icons {
+  justify-content: space-evenly;
+  align-items: flex-start;
+  font-size: 0.8em;
+  margin: 0.3em 0 0 -1.6em;
+}
+
+.icons a{
+  margin: 0 0em 0 -5em;
+}
+
+
+

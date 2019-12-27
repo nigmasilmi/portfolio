@@ -1,4 +1,4 @@
-:host{
+:host {
   display: block;
   height: 100vh;
 }
@@ -49,4 +49,17 @@
 
 .skLogos {
   max-width: 100%;
+}
+
+/* UP TO 350px */
+@media (max-width: 350px) {
+  .skillset {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subSkContainer{
+    margin-top: 7%;
+  }
+
 }
