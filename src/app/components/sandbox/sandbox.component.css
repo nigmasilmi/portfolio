@@ -105,8 +105,8 @@ a {
   .icons {
     justify-content: space-evenly;
     align-items: flex-start;
-    font-size: 0.8em;
-    margin: 0.3em 0 0 -1.6em;
+    font-size: 0.79em;
+    margin: 0.3em 1em 0 -1.2em;
   }
 
   .icons a {
@@ -164,8 +164,8 @@ a {
   .icons {
     justify-content: space-evenly;
     align-items: flex-start;
-    font-size: 0.8em;
-    margin: 0.3em 0 0 -17.2em;
+    font-size: 0.79em;
+    margin: 0.3em 1em 0 -17.2em;
   }
 
   .icons a {
@@ -199,13 +199,15 @@ a {
   }
 
   .brandText>h4 {
-    font-size: 1.3em;
+    font-size: 1.1em;
     line-height: 23px;
     margin: 0.1em 0 0 -0.7em;
   }
 
   .brandImg {
     grid-column: 2/5;
+    margin-left: -5%;
+
   }
 
   .brandImg img {
@@ -219,8 +221,8 @@ a {
   .icons {
     justify-content: space-evenly;
     align-items: flex-start;
-    font-size: 1em;
-    margin: 0.5em 0 0 -17.9em;
+    font-size: 0.9em;
+    margin: 0.5em 0 0 -16.9em;
   }
 
   .icons a {
@@ -235,6 +237,10 @@ a {
 
   .branding {
     margin-left: -3em;
+  }
+
+  .brandText>h4{
+    font-size: 1.9em;
   }
 
 

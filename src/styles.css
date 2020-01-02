@@ -181,7 +181,7 @@ body {
   margin-left: 4%;
   font-style: normal;
   font-weight: normal;
-  font-size: 5em;
+  font-size: 4.5em;
   /* line-height: 122px; */
   color: rgba(255, 255, 255, 0.05);
 
@@ -190,7 +190,7 @@ body {
 /* UP TO 365px */
 @media (max-width: 365px) {
   .waterMark {
-    font-size: 3em;
+    font-size: 2.5em;
     z-index: 5;
   }
 }
@@ -200,14 +200,14 @@ body {
 @media (min-width: 366px) and (max-width: 575px) {
 
   .waterMark {
-    font-size: 3.5em;
+    font-size: 3em;
     z-index: 5;
   }
 }
 
 @media (min-width: 576px) and (max-width: 769px) {
   .waterMark {
-    font-size: 4em;
+    font-size: 3.5em;
     z-index: 5;
   }
 

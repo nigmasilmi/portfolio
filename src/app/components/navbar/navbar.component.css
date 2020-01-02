@@ -35,39 +35,88 @@ nav {
 
 }
 
+#toggler {
+  opacity: 0;
+}
+
 /* UP TO 365px */
 @media (max-width: 365px) {
 
-  .navBar {
-    margin-top: 35%;
-    margin-left: 0;
-    align-self: center;
-    flex-direction: column;
-    opacity: 0.3;
+
+  #toggler {
+    position: absolute;
+    top: 5em;
+    left: 9em;
+    cursor: pointer;
+    z-index: 6;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+
+  }
+
+  .hamburger {
+    visibility: visible;
+    position: absolute;
+    top: 4em;
+    left: 7em;
     z-index: 5;
+    padding: 1.4em 1em 1em 1em;
+    width: 30px;
+    height: 30px;
+  }
+
+  .hamburger .btn-line {
+    position: relative;
+    width: 100%;
+    border-top: 0.125em solid #F74D4D;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    transition: all 0.4s ease;
+    -webkit-box-shadow: 1px 11px 3px 0px rgba(242, 184, 184, 0.7);
+    -moz-box-shadow: 1px 1px 3px 0px rgba(242, 184, 184, 0.7);
+    box-shadow: 1px 1px 3px 0px rgba(242, 184, 184, 0.7);
+
   }
 
 
-  .navBar ul li {
-    font-size: 14px;
-    line-height: 30px;
-    margin-right: 5%;
 
+  #toggler:checked+.hamburger .btn-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
   }
 
-}
+  #toggler:checked+.hamburger .btn-line:nth-child(2) {
+    opacity: 0;
+  }
 
-/* FROM 366 TO 575 px */
-@media (min-width: 366px) and (max-width: 575px) {
+  #toggler:checked+.hamburger .btn-line:nth-child(3) {
+    transform: rotate(-45deg) translate(1px, -1px);
+  }
+
 
   .navBar {
-    margin-top: 35%;
-    margin-left: -0.2em;
-    align-self: center;
-    flex-direction: column;
-    opacity: 0.3;
-    z-index: 5;
+    position: fixed;
+    margin-top: 53%;
+    opacity: 0.9;
   }
+
+  .navBar ul {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 9em;
+    margin-left: 4.4em;
+    padding: 1em;
+    background: #F74D4D;
+  }
+
 
 
   .navBar ul li {
@@ -77,50 +126,299 @@ nav {
 
   }
 
+
+  #toggler:checked~ul {
+    visibility: visible;
+    opacity: 1;
+
+  }
+
+
 }
 
- /*** FROM 576px ***/
+/* FROM 366 TO 575 px */
+@media (min-width: 366px) and (max-width: 575px) {
 
- @media (min-width: 576px) and (max-width: 769px) {
+  #toggler {
+    position: absolute;
+    top: 5em;
+    left: 10em;
+    cursor: pointer;
+    z-index: 6;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+
+  }
+
+  .hamburger {
+    visibility: visible;
+    position: absolute;
+    top: 4em;
+    left: 8em;
+    z-index: 5;
+    padding: 1.4em 1em 1em 1em;
+    width: 30px;
+    height: 30px;
+  }
+
+  .hamburger .btn-line {
+    position: relative;
+    width: 100%;
+    border-top: 0.125em solid #F74D4D;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    transition: all 0.4s ease;
+    -webkit-box-shadow: 1px 11px 3px 0px rgba(242, 184, 184, 0.7);
+    -moz-box-shadow: 1px 1px 3px 0px rgba(242, 184, 184, 0.7);
+    box-shadow: 1px 1px 3px 0px rgba(242, 184, 184, 0.7);
+
+  }
+
+
+
+  #toggler:checked+.hamburger .btn-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  #toggler:checked+.hamburger .btn-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  #toggler:checked+.hamburger .btn-line:nth-child(3) {
+    transform: rotate(-45deg) translate(1px, -1px);
+  }
+
 
   .navBar {
-    margin-top: 16%;
-    margin-left: 6em;
-    align-self: center;
+    position: fixed;
+    margin-top: 53%;
+    opacity: 0.9;
+  }
+
+  .navBar ul {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease;
+    display: flex;
     flex-direction: column;
-    opacity: 0.3;
-    z-index: 5;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 9em;
+    margin-left: 6.3em;
+    padding: 1em;
+    background: #F74D4D;
   }
 
 
+
   .navBar ul li {
-    font-size: 21px;
+    font-size: 17px;
     line-height: 30px;
     margin-right: 5%;
 
   }
- }
 
-/* FROM 770px to 1200 px */
 
-@media (min-width: 770px) and (max-width: 1200px) {
+  #toggler:checked~ul {
+    visibility: visible;
+    opacity: 1;
+
+  }
+
+}
+
+/*** FROM 576px ***/
+
+@media (min-width: 576px) and (max-width: 769px) {
+
+
+  #toggler {
+    position: absolute;
+    top: 4em;
+    left: 17.3em;
+    cursor: pointer;
+    z-index: 6;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+
+  }
+
+  .hamburger {
+    visibility: visible;
+    position: absolute;
+    top: 3em;
+    left: 13.6em;
+    z-index: 5;
+    padding: 1.4em 1em 1em 1em;
+    width: 30px;
+    height: 30px;
+  }
+
+  .hamburger .btn-line {
+    position: relative;
+    width: 100%;
+    border-top: 0.125em solid #F74D4D;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    transition: all 0.4s ease;
+    -webkit-box-shadow: 1px 11px 3px 0px rgba(242, 184, 184, 0.7);
+    -moz-box-shadow: 1px 1px 3px 0px rgba(242, 184, 184, 0.7);
+    box-shadow: 1px 1px 3px 0px rgba(242, 184, 184, 0.7);
+
+  }
+
+
+
+  #toggler:checked+.hamburger .btn-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  #toggler:checked+.hamburger .btn-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  #toggler:checked+.hamburger .btn-line:nth-child(3) {
+    transform: rotate(-45deg) translate(1px, -1px);
+  }
+
 
   .navBar {
-    margin-top: 10%;
-    margin-left: 21em;
-    align-self: center;
-    opacity: 0.3;
-    z-index: 5;
+    position: fixed;
+    margin-top: 53%;
+    opacity: 0.9;
+  }
+
+  .navBar ul {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 8em;
+    margin-left: 11.5em;
+    padding: 1em;
+    background: #F74D4D;
   }
 
 
+
   .navBar ul li {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 30px;
     margin-right: 5%;
 
   }
 
 
+  #toggler:checked~ul {
+    visibility: visible;
+    opacity: 1;
+
+  }
+}
+
+/* FROM 770px to 960 px */
+
+@media (min-width: 770px) and (max-width: 960px) {
+
+
+  #toggler {
+    position: absolute;
+    top: -5em;
+    left: 23em;
+    cursor: pointer;
+    z-index: 6;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+
+  }
+
+  .hamburger {
+    visibility: visible;
+    position: absolute;
+    top: -4em;
+    left: 19em;
+    z-index: 5;
+    padding: 1.4em 1em 1em 1em;
+    width: 30px;
+    height: 30px;
+  }
+
+  .hamburger .btn-line {
+    position: relative;
+    width: 100%;
+    border-top: 0.125em solid #F74D4D;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    transition: all 0.4s ease;
+    -webkit-box-shadow: 1px 11px 3px 0px rgba(242, 184, 184, 0.7);
+    -moz-box-shadow: 1px 1px 3px 0px rgba(242, 184, 184, 0.7);
+    box-shadow: 1px 1px 3px 0px rgba(242, 184, 184, 0.7);
+
+  }
+
+
+  #toggler:checked+.hamburger .btn-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  #toggler:checked+.hamburger .btn-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  #toggler:checked+.hamburger .btn-line:nth-child(3) {
+    transform: rotate(-45deg) translate(1px, -1px);
+  }
+
+
+  .navBar {
+    position: fixed;
+    margin-top: 53%;
+    opacity: 0.9;
+  }
+
+  .navBar ul {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 17.7em;
+    margin-top: 1em;
+    padding: 1em;
+    background: #F74D4D;
+  }
+
+
+
+  .navBar ul li {
+    font-size: 17px;
+    line-height: 30px;
+    margin-right: 5%;
+
+  }
+
+
+  #toggler:checked~ul {
+    visibility: visible;
+    opacity: 1;
+
+  }
 
 }

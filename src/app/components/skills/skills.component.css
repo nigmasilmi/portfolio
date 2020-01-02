@@ -108,6 +108,16 @@
   }
 }
 
+/*** FROM 576px to 769px ***/
+
+@media (min-width: 576px) and (max-width: 769px) {
+
+.skillsContainer{
+  margin-top: 13em;
+
+}
+
+}
 /* FROM 770px to 1200 px */
 
 @media (min-width: 770px) and (max-width: 1200px) {

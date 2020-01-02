@@ -60,7 +60,8 @@
 @media (min-width: 366px) and (max-width: 575px) {
 
   .contactWrapper {
-    margin-top: 57%;
+    /* margin-top: 40%; */
+    margin-top: 47%;
   }
 
   .holdTheCards {
@@ -83,6 +84,11 @@
     box-shadow: 12px 0p 22px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 8% 5% 12% 5%;
   }
+
+  .icons{
+    margin: 0.3em 2em 0 -18.2em;
+
+  }
 }
 
 /*** FROM 576px ***/
@@ -90,7 +96,8 @@
 @media (min-width: 576px) and (max-width: 769px) {
 
   .contactWrapper {
-    margin-top: 25%;
+    /* margin-top: 25%; */
+    margin-top: 49%;
   }
 
   .holdTheCards {
@@ -112,6 +119,11 @@
       rgba(66, 25, 90, 0.2);
     box-shadow: 12px 0p 22px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 8% 5% 12% 5%;
+  }
+
+  .icons{
+    /* margin: 0.5em -27px 0 -16.9em; */
+    margin: 0.5em 0 0 -16.9em;
   }
 
 
