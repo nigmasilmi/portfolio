@@ -13,7 +13,7 @@ export class ProjectService {
 
   getProjects() {
     // return this.fb.collection('proyectos').snapshotChanges();
-    return this.fb.collection('proyectos', ref  => ref.orderBy('name', 'asc'));
+    return this.fb.collection('proyectos', ref => ref.orderBy('date', 'desc'));
   }
 }
 
